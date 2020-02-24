@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		int N, M;
+		int total = N * M;
+		int count = 0;
+		while(count <= total) {
+			
+		}
+
+	}
+
+}

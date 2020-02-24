@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;17780_새로운 게임&apos; to &apos;17780_새로운 게임(백준)&apos;&#x0D;&#x0A;- Original element: &apos;17780_새로운 게임&apos;&#x0D;&#x0A;- Renamed element: &apos;17780_새로운 게임&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;17780_새로운 게임&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=17780_새로운 게임" name="17780_새로운 게임(백준)" references="true" stamp="1577104110259" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;봄버맨(백준)&apos; to &apos;봄버맨(백준)_(풀이중)&apos;" description="Rename resource &apos;봄버맨(백준)&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/봄버맨(백준)" name="봄버맨(백준)_(풀이중)" stamp="1572314170742" updateReferences="true"/>
+</session>

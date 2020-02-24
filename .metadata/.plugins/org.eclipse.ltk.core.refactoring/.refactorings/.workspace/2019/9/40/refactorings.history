@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;가장 긴 증가하는 부분 수열&apos; to &apos;가장 긴 증가하는 부분 수열(백준)&apos;&#x0D;&#x0A;- Original element: &apos;가장 긴 증가하는 부분 수열&apos;&#x0D;&#x0A;- Renamed element: &apos;가장 긴 증가하는 부분 수열&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;가장 긴 증가하는 부분 수열&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=가장 긴 증가하는 부분 수열" name="가장 긴 증가하는 부분 수열(백준)" references="true" stamp="1569758621000" version="1.0"/>
+</session>

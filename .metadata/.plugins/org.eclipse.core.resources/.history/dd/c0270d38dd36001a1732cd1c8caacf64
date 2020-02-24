@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Main {
+	private static int[][] map;
+	private static int[][] dir = {{0,1},{-1,0},{0,-1},{1,0}};
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = 10001;
+		map = new int[N][N];
+		int total = N * N;
+		int step = 1;
+		int count = 0;
+		int startI = N/2;
+		int startJ = N/2;
+		map[startI][startJ] = 1;
+		outer:while(true) {
+			if(step % 2 != 0) {
+				for(int i = 0; i < 2; i++) {
+					for(int j = 0; j < step; j++) {
+						startI += dir[i][0];
+						startJ += dir[i][1];
+						map[startI][startJ] = (++count) + 1;
+						if(count == total-1) break outer;
+					}
+				}
+			} else {
+				for(int i = 2; i < 4; i++) {
+					for(int j = 0; j < step; j++) {
+						startI += dir[i][0];
+						startJ += dir[i][1];
+						map[startI][startJ] = (++count) + 1;
+						if(count == total-1) break outer;
+					}
+				}
+			}
+			step++;
+		}
+		print(N,sc.nextInt(),sc.nextInt(), sc.nextInt(), sc.nextInt());
+	}
+	private static void print(int N, int r1, int c1, int r2, int c2) {
+		int transR1 = r1 + N/2;
+		int transC1 = c1 + N/2;
+		int transR2 = r2 + N/2;
+		int transC2 = c2 + N/2;
+		
+		
+		for(int i = transR1; i < transR2; i++) {
+			for(int j = transC1; j < transC2; j++) {
+				System.out.print(map[i][j] + " ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+	}
+
+}

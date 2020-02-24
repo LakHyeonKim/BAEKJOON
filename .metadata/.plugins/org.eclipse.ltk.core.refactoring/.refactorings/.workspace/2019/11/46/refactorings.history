@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;17836_공주님을 구해라&apos; to &apos;17836_공주님을 구해라(백준)&apos;&#x0D;&#x0A;- Original element: &apos;17836_공주님을 구해라&apos;&#x0D;&#x0A;- Renamed element: &apos;17836_공주님을 구해라&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;17836_공주님을 구해라&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=17836_공주님을 구해라" name="17836_공주님을 구해라(백준)" references="true" stamp="1573563995676" version="1.0"/>
+</session>

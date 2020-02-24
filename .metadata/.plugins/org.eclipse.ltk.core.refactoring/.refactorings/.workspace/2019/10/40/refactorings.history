@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;케빈 베이컨의 6단계 법칙&apos; to &apos;케빈 베이컨의 6단계 법칙(백준)&apos;&#x0D;&#x0A;- Original element: &apos;케빈 베이컨의 6단계 법칙&apos;&#x0D;&#x0A;- Renamed element: &apos;케빈 베이컨의 6단계 법칙&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;케빈 베이컨의 6단계 법칙&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=케빈 베이컨의 6단계 법칙" name="케빈 베이컨의 6단계 법칙(백준)" references="true" stamp="1570028200378" version="1.0"/>
+</session>

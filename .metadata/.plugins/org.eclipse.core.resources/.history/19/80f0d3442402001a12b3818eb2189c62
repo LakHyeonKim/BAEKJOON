@@ -1,0 +1,67 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+	private static int R,C,cnt;
+	private static char[][] map;
+	private static int[] high;
+	private static String temp;
+	
+	private static boolean edge(int nextJ) {
+		if(nextJ < 0 || nextJ >= C) return false;
+		else return true;
+	}
+	
+	private static void doRod(int high, int dir) {
+		int idx = R - high;
+		if(dir == 0) { // 왼쪽부터 던질 때
+			int j = 0;
+			while(edge(j) && map[idx][j] != 'x') {
+				System.out.print(map[idx][j]);
+				j++;
+			}
+			if(edge(j)) map[idx][j] = '.';
+		}else { // 오른쪽 부터 던질 때
+			int j = C-1;
+			while(edge(j) && map[idx][j] != 'x') {
+				j--;
+			}
+			if(edge(j)) map[idx][j] = '.';
+		}
+	}
+	
+	
+	public static void main(String[] args) throws Exception{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String[] line = br.readLine().split(" ");
+		R = Integer.parseInt(line[0]);
+		C = Integer.parseInt(line[1]);
+		map = new char[R][C];
+		for(int i = 0; i < R; i++) {
+			temp = br.readLine();
+			for(int j = 0; j < C; j++) {
+				map[i][j] = temp.charAt(j);
+			}
+		}
+		cnt = Integer.parseInt(br.readLine());
+		high = new int[cnt];
+		line = br.readLine().split(" ");
+		for(int i = 0; i < cnt; i++) {
+			high[i] = Integer.parseInt(line[i]);
+		}
+		print();
+		System.out.println();
+		doRod(6, 0);
+		print();
+	}
+	
+	private static void print() {
+		for(int i = 0; i < R; i++) {
+			for(int j = 0; j < C; j++) {
+				System.out.print(map[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+}

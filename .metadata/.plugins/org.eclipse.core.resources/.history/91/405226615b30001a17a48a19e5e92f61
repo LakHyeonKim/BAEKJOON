@@ -1,0 +1,59 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+	static class Point{
+		int i;
+		int j;
+		Point(int i, int j){
+			this.i = i;
+			this.j = j;
+		}
+	}
+	private static char[][] map;
+	private static int[][] tempMap;
+	private static boolean[][] visited;
+	private static int[][] dir = {{1,0},{-1,0},{0,1},{0,-1}};
+	private static int N, M;
+	private static String[] line;
+	private static String mapInfo;
+	
+	private static boolean edge(int nextI, int nextJ) {
+		if(nextI < 0 || nextI >= N || nextJ < 0 || nextJ >= M) return false;
+		else return true;
+	}
+	
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		line = br.readLine().split(" ");
+		N = Integer.parseInt(line[0]);
+		M = Integer.parseInt(line[1]);
+		map = new char[N][M];
+		tempMap = new int[N][M];
+		visited = new boolean[N][M];
+		for(int i = 0; i < N; i++) {
+			mapInfo = br.readLine();
+			for(int j = 0; j < M; j++) {
+				map[i][j] = mapInfo.charAt(j);
+			}
+		}
+		
+		for(int i = 0; i < N; i++) {
+			for(int j = 0; j < M; j++) {
+				if(map[i][j] == 'X') {
+					int cnt = 0;
+					for(int k = 0; k < 4; k++) {
+						int nextI = i + dir[k][0];
+						int nextJ = j + dir[k][1];
+						if(edge(nextI, nextJ) && map[nextI][nextJ] == '.') {
+							cnt++;
+						}
+					}
+					tempMap[i][j] = cnt;
+				}
+			}
+		}
+	}
+
+}
